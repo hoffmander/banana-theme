@@ -12,14 +12,10 @@ This theme uses Grunt so you'll need to download node.js and install Grunt CLI.
 
 After you have all that rigged up, run
 
-`'$ npm install'`
-`'$ grunt'`
+`$ npm install`
+`$ grunt`
 
-* li
-* li
-* li
+Check to see if bourbon neat is up to date.
 
-1. li
-2. li
-3. li
+Use `$ grunt scaff` to create a new component. This will create both a php file and an scss file with the name given at the prompt. You will need to manually add the include to the _sass_partials.scss file.
 

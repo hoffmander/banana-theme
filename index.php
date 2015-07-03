@@ -17,7 +17,7 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
     <h1>I'm Back Bitches</h1>
 
-    <div class="columns three four six twelve">
+    <div class="columns four">
       <div class="column">
         <h4>I'm a Column #1!</h4>
       </div>

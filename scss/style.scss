@@ -14,9 +14,9 @@ Text Domain: Banana
 @import "bourbon/bourbon";
 @import "grid-settings";
 @import "neat/neat";
-@import "variables";
 @import "mixins";
 @import "grid";
+@import "variables";
 @import "typography";
 @import "global";
 @import "header";  
@@ -24,3 +24,4 @@ Text Domain: Banana
 @import "button";
 @import "form-control";
 @import "../components/sass_partials";	
+@import "styleguide";  

@@ -17,9 +17,10 @@ $fg-gutter: $gutter;
 
 
 // Define your breakpoints
-$xs:    new-breakpoint(min-width em(400)); 
-$sm:    new-breakpoint(min-width em(550)); 
-$med:   new-breakpoint(min-width em(800)); 
-$lrg:   new-breakpoint(min-width em(1000)); 
-$xl:    new-breakpoint(min-width em(1140)); 
+$xxs:    new-breakpoint(min-width em(340));
+$xs:     new-breakpoint(min-width em(480)); 
+$sm:     new-breakpoint(min-width em(550)); 
+$med:    new-breakpoint(min-width em(800)); 
+$lrg:    new-breakpoint(min-width em(1000)); 
+$xl:     new-breakpoint(min-width em(1140)); 
 

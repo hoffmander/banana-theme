@@ -136,6 +136,11 @@ add_action( 'wp_enqueue_scripts', 'banana_scripts' );
  */
 require get_template_directory() . '/inc/template-tags.php';
 
+
+//////////////////////////////////////////////////////////////////////
+////// HELPFUL FUNCTIONS —— NOT PART OF ORIGINAL FUNCTIONS.PHP //////
+////////////////////////////////////////////////////////////////////
+
 // Change More link to permalink instead of /#more
 function remove_more_link_scroll( $link ) {
   $link = preg_replace( '|#more-[0-9]+|', '', $link );
