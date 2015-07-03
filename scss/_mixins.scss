@@ -1,0 +1,37 @@
+// Rem Font Size Magic
+@function calculateRem($size) {
+  $remSize: $size / 14px;
+  @return $remSize * 1.4rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// @font-face magic  
+@mixin aj-font-face (
+  $font-family,
+  $file-path,
+  $weight: normal,
+  $style: normal
+) {
+
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+
+    src: url('#{$file-path}.eot');
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+         url('#{$file-path}.woff') format('woff'),
+         url('#{$file-path}.ttf') format('truetype'),
+         url('#{$file-path}.svg##{$font-family}') format('svg');
+  }
+}
+
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

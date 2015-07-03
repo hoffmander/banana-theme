@@ -1,0 +1,26 @@
+/*
+Theme Name: Banana
+Theme URI: http://hoffmander.com/
+Author: Alex Hoffman 
+Author URI: http://hoffmander.com/
+Description: A super awesome starter theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Banana
+*/
+
+@import "normalize";
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+@import "variables";
+@import "mixins";
+@import "grid";
+@import "typography";
+@import "global";
+@import "header";  
+@import "footer";
+@import "button";
+@import "form-control";
+@import "../components/sass_partials";	

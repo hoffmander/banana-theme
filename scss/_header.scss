@@ -1,0 +1,9 @@
+.site-branding h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+
+  & a {
+    text-decoration: none;
+    color: $gray-dark;
+  } 
+}

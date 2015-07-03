@@ -1,0 +1,31 @@
+.container {
+	padding-left: 16px;
+	padding-right: 16px;
+	@include outer-container;
+	@include media($xl) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// IT'S MOTHA FUCKN' MAGIC
+
+.columns {
+	&.four {
+		.column {
+			@include media($sm) {
+				@include span-columns(6);
+				@include omega(2n);
+				background: navy;
+				margin-bottom: 10px;
+			}
+			@include media($med) {
+				@include omega-reset(2n);
+				@include span-columns(4);
+				@include omega(3n);
+				background: tomato;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

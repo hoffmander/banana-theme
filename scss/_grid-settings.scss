@@ -1,0 +1,25 @@
+@import "neat/neat-helpers";
+
+// Grid settings
+$grid-columns: 12;
+$max-width: em(1140);
+$column: modular-scale(3, 1em, $golden) !default;
+$gutter: modular-scale(3, 1em, $golden) !default;
+
+
+// ------------------------------------------------------------
+// Set Bourbon's flex-grid variables to match what Neat is doing
+// http://bourbon.io/docs/#flex-grid
+// ------------------------------------------------------------
+
+$fg-column: $column;
+$fg-gutter: $gutter;
+
+
+// Define your breakpoints
+$xs:    new-breakpoint(min-width em(400)); 
+$sm:    new-breakpoint(min-width em(550)); 
+$med:   new-breakpoint(min-width em(800)); 
+$lrg:   new-breakpoint(min-width em(1000)); 
+$xl:    new-breakpoint(min-width em(1140)); 
+
